@@ -15,28 +15,28 @@
         <!-- Main -->
         <section id="main">
             <h2>Escríbeme tus dudas</h2>
-            <form method="post" action="#">
+            <form method="post" action="enviar.php">
                 <div class="fields">
                     <div class="field">
-                        <input type="text" name="name" id="name" placeholder="Nombre" />
+                        <input type="text" name="name" id="name" placeholder="Nombre" required="" />
                     </div>
                     <div class="field">
-                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <input type="email" name="email" id="email" placeholder="Email" required="" />
                     </div>
+                       <div class="field">
+                            <select name="subject" id="subject">
+                                <option value="tech">Cotización</option>
+                                <option value="web">Portafolio</option>
+                                <option value="cost">Team Work</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
                     <div class="field">
-                        <select name="subject" id="subject">
-                            <option value=""></option>
-                            <option value="tech">Proyectos</option>
-                            <option value="web">Diseño Web</option>
-                            <option value="cost">Costos</option>
-                            <option value="otro">Otro</option>
-                        </select>
+                        <textarea name="message" id="message" placeholder="Mensaje" rows="4" required=""></textarea>
                     </div>
+                    <!-------------------------------------------------------------------->
                     <div class="field">
-                        <textarea name="message" id="message" placeholder="Mensaje" rows="4"></textarea>
-                    </div>
-                    <div class="field">
-                        <input type="checkbox" id="human" name="human" /><label for="human">Soy un humano</label>
+                        <input type="checkbox" id="human" name="human" required="" /><label for="human">Soy un humano</label>
                     </div>
                     <div class="field">
                         <label>¿Eres un Robot?</label>
@@ -45,7 +45,8 @@
                     </div>
                 </div>
                 <ul class="actions special">
-                    <li><a href="#" class="button">Enviar</a></li>
+                    <input type="submit" class="button" value="Enviar">
+                    <!-- <li><a href="#" class="button">Enviar</a></li> -->
                 </ul>
             </form>
         </section>
