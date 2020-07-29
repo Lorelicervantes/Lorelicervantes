@@ -6,8 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <!-- Main -->
         <section id="main">
             <h2>Escríbeme tus dudas</h2>
-            <form method="post" action="enviar.php">
+            <form action="https://send.pageclip.co/zAUx8uy0cvoPuDGUjThF2ffUUk2lN3vp/Contactos" class="pageclip-form" method="post">
                 <div class="fields">
                     <div class="field">
                         <input type="text" name="name" id="name" placeholder="Nombre" required="" />
@@ -25,9 +27,9 @@
                     </div>
                        <div class="field">
                             <select name="subject" id="subject">
-                                <option value="tech">Cotización</option>
-                                <option value="web">Portafolio</option>
-                                <option value="cost">Team Work</option>
+                                <option value="cotizacion" select>Cotización</option>
+                                <option value="portafolio">Portafolio</option>
+                                <option value="team work">Team Work</option>
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
@@ -41,7 +43,7 @@
                     <div class="field">
                         <label>¿Eres un Robot?</label>
                         <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">SI</label>
-                        <input type="radio" id="robot_no" name="robot" /><label for="robot_no">NO</label>
+                        <input type="radio" id="robot_no" name="robot" checked /><label for="robot_no">NO</label>
                     </div>
                 </div>
                 <ul class="actions special">
@@ -60,6 +62,8 @@
             </ul>
         </footer>
     </div>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </body>
 
