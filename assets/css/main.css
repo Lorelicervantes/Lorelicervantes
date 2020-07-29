@@ -193,7 +193,15 @@
 		a:hover {
 			color: #01E0E7;
 		}
+	
+	a .acolor{
+		color: #3C09D0;
+	}
 
+	a:hover .acolor{
+		color: #01E0E7;
+	}
+	
 	strong, b {
 		color: #313f47;
 	}
@@ -266,7 +274,7 @@
 	hr {
 		border: 0;
 		border-bottom: solid 1px #c8cccf;
-		margin: 3em 0;
+		margin: 2.2em 0;
 	}
 
 /* Form */
